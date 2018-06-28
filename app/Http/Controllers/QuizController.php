@@ -54,10 +54,8 @@ class QuizController extends Controller
         $score = 0;
         $total = 0;
         $topic_id = $dataRequest[0]['topic'];
-        // dd($dataRequest);
         foreach ($dataRequest as $key => $value) {
             $question = Question::find($value['question_id']);            
-            // $value['answer'] = array_map(function($elem){ return intval($elem); }, $value['answer']);
 
             if(isset($value['answer'])){
                 $value['answer'] = array_map(function($elem){ return intval($elem); }, $value['answer']);

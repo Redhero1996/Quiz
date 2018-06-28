@@ -160,6 +160,7 @@
 				data: {dataRequest},
 				success:function(data){
 					questionArr = data.correctAns;
+					// console.log(questionArr);
 					for(var i =0; i< questionArr.length; i++) {
 						if(questionArr[i].answer) {
 							for (var j = 0; j < questionArr[i].answer_id.length; j++) {									

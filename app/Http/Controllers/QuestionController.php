@@ -72,7 +72,7 @@ class QuestionController extends Controller
 			for ($i=0; $i < count($all_correct); $i++) { 
 
 				if($key == (int)$all_correct[$i]){
-					$correct[$key] = $answer->id;
+					$correct[$i] = $answer->id;
 					$question->correct_ans = $correct;
 				}
 				$question->save();

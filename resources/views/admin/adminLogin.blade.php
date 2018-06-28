@@ -39,13 +39,7 @@
 				<input type="password" placeholder="password" name="password" value="{{old('password')}}"><br>
 				@if($errors->has('password'))
 					<span style="color: red;"><i> {{ $errors->first('password') }} </i></span>
-				@endif
-				<div id="remember" class="checkbox" style="margin-top: 10px;">
-					 <label>
-					 	<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }} > Remember Me
-					 </label>
-				</div>
-				
+				@endif				
 				<input type="submit" value="Login">
 		</form>
 

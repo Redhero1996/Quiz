@@ -17,7 +17,7 @@ class AdminLoginController extends Controller
     		'password' => 'required|min:6',
     	]);
 
-    	if(Auth::attempt([ 'email' => $request->email, 'password' => $request->password], $request->has('remember'))){
+    	if(Auth::attempt([ 'email' => $request->email, 'password' => $request->password])){
     		
     		return redirect()->route('users.index');
     	}else{
