@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 10, 2018 lúc 11:09 AM
+-- Thời gian đã tạo: Th6 28, 2018 lúc 10:58 AM
 -- Phiên bản máy phục vụ: 10.1.26-MariaDB
 -- Phiên bản PHP: 7.1.9
 
@@ -963,7 +963,6 @@ INSERT INTO `topic_user` (`id`, `topic_id`, `user_id`, `total`, `created_at`, `u
 (7, 10, 10, 15, NULL, NULL),
 (8, 10, 10, 5, NULL, NULL),
 (9, 4, 10, 5, NULL, NULL),
-(10, 11, 10, 0, NULL, NULL),
 (11, 7, 15, 30, NULL, NULL),
 (12, 4, 15, 50, NULL, NULL),
 (13, 10, 15, 5, NULL, NULL),
@@ -1007,15 +1006,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `level`, `provider`, `provider_id`, `avatar`, `access_token`, `remember_token`, `created_at`, `updated_at`) VALUES
-(2, 'Hero Gustin', 'herogustin@gmail.com', '$2y$10$lFw0BHcj45dMv5roSpOg8OzbC60fLJiOO7N4u5wL..YG9eeENq2KS', 1, '', '', '1522222566.jpg', NULL, '7cvXtJjrvy3jaFx6OeyrSF7kTlw7rTf1xXaH00DrG7SpgdfaAJoGyovqaUW2', '2018-03-16 09:50:00', '2018-03-28 00:42:16'),
+(2, 'Hero Gustin', 'herogustin@gmail.com', '$2y$10$lFw0BHcj45dMv5roSpOg8OzbC60fLJiOO7N4u5wL..YG9eeENq2KS', 1, '', '', '1522222566.jpg', NULL, 'EnadN3UhPYsanuruq2L57mgETkWfrYe470qnsqucMoOjOvIZkQhYibSdTGTN', '2018-03-16 09:50:00', '2018-03-28 00:42:16'),
 (3, 'redhero', 'redhero@gmail.com', '$2y$10$yEnwN7aPkUJgG19XFpQINO8ivIYvNkT/wM5ANlENsB4VYtaSzZJK6', 1, '', '', '1522137555.jpg', NULL, 'gHB4OADqNnJaB5zlD5qY813l1UNssMDkxS5Qn8aeEXseWsxbIidIEqtDNK8e', '2018-03-16 10:03:37', '2018-03-27 00:59:16'),
-(5, 'Emma', 'emma@gmail.com', '$2y$10$DYr6k3ChnA0/3.501cVlgeDYyrW.sE2ZYthe3.tGcY38yGey0ot9W', 1, '', '', '1521282076.png', NULL, '7VwRyFJGvMbV8wVGcvAqAQ5cysNOtgWjzyOCge7v23ZKYVlKjXPfrJVgFGjU', '2018-03-16 10:42:08', '2018-03-19 00:00:55'),
+(5, 'Emma', 'emma@gmail.com', '$2y$10$DYr6k3ChnA0/3.501cVlgeDYyrW.sE2ZYthe3.tGcY38yGey0ot9W', 1, '', '', '1521282076.png', NULL, '5uh7OXFInszduwUUAO3lNbdtahV8WnwGt7BFvtNcofZO74c8NSCkUF9Lvvgp', '2018-03-16 10:42:08', '2018-03-19 00:00:55'),
 (10, 'Ji Ji', 'jj@gmail.com', '$2y$10$rcbB38flLrhO6A4Rfun6Uu1ZeC5hZa4zU3Hbj/VvHotFSkwNTBvDa', 0, '', '', '1522296988.gif', NULL, 'NgdkrA3LhvNrzEr8sq1Dx5IwAqdOJ8jgfQKfhEIkBUjeigNkbD2Y23hFUK00', '2018-03-27 18:35:32', '2018-04-18 21:55:46'),
 (13, 'Hero Gustin', 'herogustin1986@gmail.com', '$2y$10$MtjInVqB0daHbr8GZtYAo./ouxcOT1R/1A3/l1LEKSRrQHTiFWEQO', 0, 'facebook', '197856630991177', '1522772532.jpg', 'EAASEY7vs0qMBAM5Am6hJ8ved38IzHp6a8HbiJEPSUL6gOXCg9RZCU9z5m63HThDoApdpUNDgNFtEGIOFBuBFxZBzUS1RmOAR2vH6pO2DjgD2ZC2uGqHBkjOLtP4SCZBYoSZBwNYZBALJt36cJc1zSUYPRAErj5pS0lr6ZBI1ZCPG4QZDZD', 'WlVUMhqCUO7gK7RGcIysshGMwpShVDHjGXCfu3OKszvcSNXpFfmusRtCDM0x', '2018-04-03 08:29:55', '2018-04-03 09:22:42'),
 (14, 'red hero', 'frog.dbsk.cass@gmail.com', '$2y$10$7JgpLImG6XW.07JSBCx8cuFD8yR506dWzCYNyflo4w80/6xJ.83KG', 0, 'google', '113072784512334386526', '1522775354.jpg', 'ya29.GluSBRDIKS_k9PcPZKJctieIZ-77h1vLhmru_0r-RZ2dlgalyjTT9C2JNH1F2Xu5ypTgIPFGcyASY0Y_QMqoJLLtHBnMtFKFxLDgS58YIrznT6p6B09oScRTKvao', 'Sk58kUKIDWgbfY6mdTD1UvSgwauypzLnKUXwFfq6CW1fdgnvrBbgdOWynFkt', '2018-04-03 09:25:47', '2018-04-03 10:09:14'),
 (15, 'Huyền Nguyễn', 'huyenbk0401@gmail.com', '', 0, 'google', '108726792839500417796', '1523791211.jpg', 'ya29.GluSBTCOZ1xMPKGvE0TJ19y9zOcNnQxxSMbRSHkM2_fw3QSwQhHegHXraMK6GMfokDqkHolZgcxeIQyGXnWoEj_eOuRMQsq9UTajC3jDyxLbiFvMFIJBnoh1ZPv3', 'jN35lizqUJgXG9nwnYT2JkbRrHMBe4zVpYcCZJumHKoY6wlgAp6viDYR8PB6', '2018-04-03 10:16:09', '2018-04-15 04:20:11'),
 (16, 'Boss baby', 'boss@gmail.com', '$2y$10$lZvBCsiN7A/2CzQTA6btweYzD4rl8ObWeH1udrLPdWc.vEs2pr1pK', 0, NULL, NULL, NULL, NULL, 'ZVQaXrNSWzFhG8Lz8czH0AqX9UHXFPvR6DhrlQiu8BA3JKoZQfPC1Rm2I775', '2018-04-13 21:10:22', '2018-04-13 21:10:22'),
-(21, 'Dakota', 'dakota@gmail.com', '$2y$10$xWG7h/yGUMA.yVL6l/E/tuROcA0WN.GmnPlv9V5UbdDwjD9pqfpqy', 0, NULL, NULL, '1523790066.jpg', NULL, '8oJ0SgaqDaEluCkARiYcI9NrLSMkfNxxbUavjn94iywg79VAoegZeX0sPqRo', '2018-04-15 04:00:50', '2018-04-15 04:01:06'),
+(21, 'Dakota', 'dakota@gmail.com', '$2y$10$xWG7h/yGUMA.yVL6l/E/tuROcA0WN.GmnPlv9V5UbdDwjD9pqfpqy', 0, NULL, NULL, '1523790066.jpg', NULL, 'Q2ikH3gc4pcY9pv7HYUAQ2r5yeDwkqP8WCcign1GzrkO8NpcM0hIRUZKWFBY', '2018-04-15 04:00:50', '2018-04-15 04:01:06'),
 (22, 'Chi Nguyen', 'chinguyen270296@gmail.com', '', 0, 'google', '103433988440606455875', '1523791095.jpg', 'ya29.GlueBWojxgPxG_Yjpg-jgjkGxcW1dg1ddLTh79me9urcAXyd_1WU6GJjh-DpUliE0-wWvvjMHZk-hAEQGxSuYjdrQ3lon1RcvVoGZPjzr6wcm1GJGlTBcDyMsvdw', '1kCBsVetjIzz0jLrcacf2AaTlS0amfhkgm0GjcTkc82rOIX8589kswPP9YNk', '2018-04-15 04:17:18', '2018-04-15 04:18:15');
 
 --
